@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<style>
+    .border-top {
+        width: 0%;
+        height: 1px;
+        top: 6%;
+        left: 5%;
+    }
+
+    .border-right {
+        width: 1px;
+        height: 0;
+        top: 94%;
+        right: 5%
+    }
+
+    .border-bottom {
+        width: 0;
+        height: 1px;
+        bottom: 6%;
+        left: 95%;
+    }
+
+    .border-left {
+        width: 1px;
+        height: 0%;
+        top: 6%;
+        left: 5%;
+    }
+
+    .imgcon:hover .border-top {
+        width: 90%;
+
+    }
+
+    .imgcon:hover .border-bottom {
+        width: 90%;
+        left: 5%;
+    }
+
+    .imgcon:hover .border-right {
+        height: 88%;
+        top: 6%;
+    }
+
+    .imgcon:hover .border-left {
+        height: 88%;
+    }
+</style>
+
+<body>
+    <div class="neibox">
+        <div class="imgbox" v-for="item in imgList" :key="item.id">
+            <div class="imgcon">
+                <img src='../../assets/images/about/banner_about.jpg' alt="">
+                <span class="spa border-top"></span>
+                <span class="spa border-right"></span>
+                <span class="spa border-bottom"></span>
+                <span class="spa border-left"></span>
+            </div>
+            <div class="jingdu"></div>
+            <div>
+                <!-- <div class="titlebox">{{item.title}}</div> -->
+                <div class="rigthbox">
+                    <div class="textboxa">直接访问网站</div>
+                    <div class="buon bnt"></div>
+                    <div class="buon bnc"></div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
